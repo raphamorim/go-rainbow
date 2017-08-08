@@ -1,4 +1,4 @@
-# go-rainbow [![Build Status](https://img.shields.io/travis/fatih/color.svg?style=flat-square)](https://travis-ci.org/raphamorim/go-rainbow)
+# go-rainbow [![Build Status](https://img.shields.io/travis/raphamorim/go-rainbow.svg?style=flat-square)](https://travis-ci.org/raphamorim/go-rainbow)
 
 Extremely inspired by [chalk.js](https://github.com/chalk/chalk)
 
