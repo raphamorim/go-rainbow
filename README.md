@@ -20,12 +20,12 @@ Extremely inspired by [chalk.js](https://github.com/chalk/chalk)
 - [FromInt32](#fromint32)
 - [Iterables](#iterables)
 - [Modifiers](#modifiers)
-  - Bold
-  - Dim
-  - Italic
-  - Underline
-  - Reverse
-  - Hidden
+  - `Bold`
+  - `Dim`
+  - `Italic`
+  - `Underline`
+  - `Reverse`
+  - `Hidden`
 - [Colors](#colors)
   - `Black`
   - `Red`
