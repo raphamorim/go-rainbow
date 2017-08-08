@@ -53,18 +53,18 @@ go get github.com/raphamorim/go-rainbow
 
 ## Example
 
-**main.go**
+**example.go**
 
 ```go
 package main
 import (
     "fmt"
 
-    r "github.com/raphamorim/go-rainbow"
+    "github.com/raphamorim/go-rainbow"
 )
 
 func main() {
-    fmt.Println(r.Bold(r.Hex("#8E44AD", "raphael")))
+    fmt.Println(rainbow.Bold(rainbow.Hex("#8E44AD", "raphael")))
 }
 ```
 
