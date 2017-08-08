@@ -131,7 +131,6 @@ func Hex(HexColor, String string) string {
 		return White(String)
 	}
 	
-	fmt.Printf("%s", strconv.Itoa(int(code)))
 	return "\033[1;38;5;" + strconv.Itoa(int(code)) + "m" + String
 }
 
