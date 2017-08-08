@@ -7,22 +7,47 @@ Extremely inspired by [chalk.js](https://github.com/chalk/chalk)
 - Iterate modifiers and colors on a String.
 - Use HEX as you wish.
 - Use from Int as you wish.
-- Use RGB as you wish.
+- Use RGB as you wish (work in progress).
 - Bring magical Rainbow on a String (work in progress).
 
 ![Sample](assets/sample.png)
+
+# Summary
+
+- [Install](#install)
+- [Hex](#hex)
+- [FromInt32](#fromint32)
+- [Iterables](#iterables)
+- [Modifiers](#modifiers)
+  - Bold
+  - Dim
+  - Italic
+  - Underline
+  - Reverse
+  - Hidden
+- [Colors](#colors)
+  - `Black`
+  - `Red`
+  - `Green`
+  - `Yellow`
+  - `Blue`
+  - `Magenta`
+  - `Cyan`
+  - `White`
+- [Background Colors](#background-colors)
+  - `BgBlack`
+  - `BgRed`
+  - `BgGreen`
+  - `BgYellow`
+  - `BgBlue`
+  - `BgMagenta`
+  - `BgCyan`
+  - `BgWhite`
 
 ## Install
 
 ```bash
 go get github.com/raphamorim/go-rainbow
-```
-
-## Iterable Samples
-
-```go
-abc := Bold(BgYellow(Blue("Bold+BgYellow+Blue")))
-xyz := Dim(Underscore("Dim+Underscore"))
 ```
 
 ## Hex
@@ -112,6 +137,13 @@ rainbow.BgBlue("String in Blue Background")
 - `BgMagentaBright`
 - `BgCyanBright`
 - `BgWhiteBright`
+
+## Iterables
+
+```go
+abc := Bold(BgYellow(Blue("Bold+BgYellow+Blue")))
+xyz := Dim(Underscore("Dim+Underscore"))
+```
 
 ## RGB (working on it)
 
