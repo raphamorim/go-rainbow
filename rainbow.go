@@ -35,105 +35,105 @@ var (
 	modifierHidden     = "\x1b[8m"
 )
 
-func Black(String string) string {
-	return colorBlack + String + reset
+func Black(text string) string {
+	return colorBlack + text + reset
 }
 
-func Blue(String string) string {
-	return colorBlue + String + reset
+func Blue(text string) string {
+	return colorBlue + text + reset
 }
 
-func Red(String string) string {
-	return colorRed + String + reset
+func Red(text string) string {
+	return colorRed + text + reset
 }
 
-func Green(String string) string {
-	return colorGreen + String + reset
+func Green(text string) string {
+	return colorGreen + text + reset
 }
 
-func Yellow(String string) string {
-	return colorYellow + String + reset
+func Yellow(text string) string {
+	return colorYellow + text + reset
 }
 
-func Magenta(String string) string {
-	return colorMagenta + String + reset
+func Magenta(text string) string {
+	return colorMagenta + text + reset
 }
 
-func Cyan(String string) string {
-	return colorCyan + String + reset
+func Cyan(text string) string {
+	return colorCyan + text + reset
 }
 
-func White(String string) string {
-	return colorWhite + String + reset
+func White(text string) string {
+	return colorWhite + text + reset
 }
 
-func BgBlack(String string) string {
-	return bgBlack + String + reset
+func BgBlack(text string) string {
+	return bgBlack + text + reset
 }
 
-func BgBlue(String string) string {
-	return bgBlue + String + reset
+func BgBlue(text string) string {
+	return bgBlue + text + reset
 }
 
-func BgRed(String string) string {
-	return bgRed + String + reset
+func BgRed(text string) string {
+	return bgRed + text + reset
 }
 
-func BgGreen(String string) string {
-	return bgGreen + String + reset
+func BgGreen(text string) string {
+	return bgGreen + text + reset
 }
 
-func BgYellow(String string) string {
-	return bgYellow + String + reset
+func BgYellow(text string) string {
+	return bgYellow + text + reset
 }
 
-func BgMagenta(String string) string {
-	return bgMagenta + String + reset
+func BgMagenta(text string) string {
+	return bgMagenta + text + reset
 }
 
-func BgCyan(String string) string {
-	return bgCyan + String + reset
+func BgCyan(text string) string {
+	return bgCyan + text + reset
 }
 
-func BgWhite(String string) string {
-	return bgWhite + String + reset
+func BgWhite(text string) string {
+	return bgWhite + text + reset
 }
 
-func Bold(String string) string {
-	return modifierBold + String + reset
+func Bold(text string) string {
+	return modifierBold + text + reset
 }
 
-func Dim(String string) string {
-	return modifierDim + String + reset
+func Dim(text string) string {
+	return modifierDim + text + reset
 }
 
-func Underscore(String string) string {
-	return modifierUnderscore + String + reset
+func Underscore(text string) string {
+	return modifierUnderscore + text + reset
 }
 
-func Blink(String string) string {
-	return modifierBlink + String + reset
+func Blink(text string) string {
+	return modifierBlink + text + reset
 }
 
-func Reverse(String string) string {
-	return modifierReverse + String + reset
+func Reverse(text string) string {
+	return modifierReverse + text + reset
 }
 
-func Hidden(String string) string {
-	return modifierHidden + String + reset
+func Hidden(text string) string {
+	return modifierHidden + text + reset
 }
 
-func Hex(HexColor, String string) string {
-	code, err := xtermcolor.FromHexStr(HexColor)
+func Hex(hexColor, text string) string {
+	code, err := xtermcolor.FromHexStr(hexColor)
 
 	if err != nil {
-		return White(String)
+		return White(text)
 	}
 
-	return "\033[1;38;5;" + strconv.Itoa(int(code)) + "m" + String
+	return "\033[1;38;5;" + strconv.Itoa(int(code)) + "m" + text
 }
 
-func FromInt32(Int uint32, String string) string {
+func FromInt32(Int uint32, text string) string {
 	code := xtermcolor.FromInt(Int)
-	return "\033[1;38;5;" + strconv.Itoa(int(code)) + "m" + String
+	return "\033[1;38;5;" + strconv.Itoa(int(code)) + "m" + text
 }
