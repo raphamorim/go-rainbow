@@ -4,10 +4,11 @@ Extremely inspired by [chalk.js](https://github.com/chalk/chalk)
 
 `go-rainbow` allows you to: 
 
-- Iterate modifiers and colors on a String
+- Iterate modifiers and colors on a String.
 - Use HEX as you wish.
+- Use from Int as you wish.
 - Use RGB as you wish.
-- Bring magical Rainbow on a String.
+- Bring magical Rainbow on a String (work in progress).
 
 ![Sample](assets/sample.png)
 
@@ -24,12 +25,26 @@ abc := Bold(BgYellow(Blue("Bold+BgYellow+Blue")))
 xyz := Dim(Underscore("Dim+Underscore"))
 ```
 
+## Hex
+
+```go
+ftm.Printf("%s", rainbow.Hex("#000080", "String from HEX")) // should be index 4 (navy blue)
+```
+
+## FromInt32
+
+32-bit unsigned integer equivalent (`uint32`)
+
+```go
+fmt.Printf("%s", FromInt(0xCC66FFFF, "String from Int32"))
+```
+
 ## Modifiers
 
 ### Usage
 
 ```go
-Rainbow.Bold("String in Bold")
+rainbow.Bold("String in Bold")
 ```
 
 - `Bold`
@@ -45,7 +60,7 @@ Rainbow.Bold("String in Bold")
 ### Usage
 
 ```go
-Rainbow.Blue("String in Blue")
+rainbow.Blue("String in Blue")
 ```
 
 ### List
@@ -73,7 +88,7 @@ Rainbow.Blue("String in Blue")
 ## Background Colors
 
 ```go
-Rainbow.BgBlue("String in Blue Background")
+rainbow.BgBlue("String in Blue Background")
 ```
 
 ### List
@@ -98,17 +113,10 @@ Rainbow.BgBlue("String in Blue Background")
 - `BgCyanBright`
 - `BgWhiteBright`
 
-
-## Hex (working on it)
-
-```go
-Rainbow.Hex('#FF8800')
-```
-
 ## RGB (working on it)
 
 ```go
-Rainbow.RGB(100, 110, 100)
+rainbow.RGB(100, 110, 100)
 ```
 
 ## License

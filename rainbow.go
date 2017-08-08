@@ -2,6 +2,9 @@ package rainbow
 
 import (
 	"fmt"
+	"strconv"
+
+	"github.com/tomnomnom/xtermcolor"
 )
 
 var (
@@ -121,10 +124,29 @@ func Hidden(String string) string {
 	return modifierHidden + String + reset
 }
 
+func Hex(HexColor, String string) string {
+	code, err := xtermcolor.FromHexStr(HexColor)
+
+	if err != nil {
+		return White(String)
+	}
+	
+	fmt.Printf("%s", strconv.Itoa(int(code)))
+	return "\033[1;38;5;" + strconv.Itoa(int(code)) + "m" + String
+}
+
+func FromInt32(Int uint32, String string) string {
+	code := xtermcolor.FromInt(Int)
+	return "\033[1;38;5;" + strconv.Itoa(int(code)) + "m" + String
+}
+
 // func main() {
-// 	fmt.Printf("%s %s %s %s %s %s %s %s", Blue("blue"), Black("black"), Red("red"), Green("green"), Yellow("yellow"), Magenta("magenta"), Cyan("cyan"), White("white"))
-// 	fmt.Printf("\n%s %s %s %s %s %s %s %s", BgBlue("bgBlue"), BgBlack("BgBlack"), BgRed("bgRed"), BgGreen("bgGreen"), BgYellow("bgYellow"), BgMagenta("bgMagenta"), BgCyan("bgCyan"), BgWhite("bgWhite"))
-// 	fmt.Printf("\n%s %s %s %s %s %s", Bold("Bold"), Dim("Dim"), Underscore("Underscore"), Blink("Blink"), Reverse("Reverse"), Hidden("Hidden"))
-// 	fmt.Printf("\n%s %s %s", Bold(BgYellow(Blue("Bold+BgYellow+Blue"))), Dim(Underscore("Dim+Underscore")), BgMagenta(Red("BgMagenta+Red")))
+	// fmt.Printf("%s %s %s %s %s %s %s %s", Blue("blue"), Black("black"), Red("red"), Green("green"), Yellow("yellow"), Magenta("magenta"), Cyan("cyan"), White("white"))
+
+	// fmt.Printf("%s", Hex("#000080", "String from HEX"))
+	// fmt.Printf("%s", FromInt32(0xCC66FFFF, "String from Int32"))
+	// fmt.Printf("\n%s %s %s %s %s %s %s %s", BgBlue("bgBlue"), BgBlack("BgBlack"), BgRed("bgRed"), BgGreen("bgGreen"), BgYellow("bgYellow"), BgMagenta("bgMagenta"), BgCyan("bgCyan"), BgWhite("bgWhite"))
+	// fmt.Printf("\n%s %s %s %s %s %s", Bold("Bold"), Dim("Dim"), Underscore("Underscore"), Blink("Blink"), Reverse("Reverse"), Hidden("Hidden"))
+	// fmt.Printf("\n%s %s %s", Bold(BgYellow(Blue("Bold+BgYellow+Blue"))), Dim(Underscore("Dim+Underscore")), BgMagenta(Red("BgMagenta+Red")))
 // }
 
