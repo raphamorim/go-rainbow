@@ -53,7 +53,7 @@ go get github.com/raphamorim/go-rainbow
 
 ## Example
 
-**example.go**
+**main.go**
 
 ```go
 package main
