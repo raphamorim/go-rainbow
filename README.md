@@ -15,6 +15,7 @@ Extremely inspired by [chalk.js](https://github.com/chalk/chalk)
 # Summary
 
 - [Install](#install)
+- [Example](#example)
 - [Hex](#hex)
 - [FromInt32](#fromint32)
 - [Iterables](#iterables)
@@ -49,6 +50,25 @@ Extremely inspired by [chalk.js](https://github.com/chalk/chalk)
 ```bash
 go get github.com/raphamorim/go-rainbow
 ```
+
+## Example
+
+**main.go**
+
+```go
+package main
+import (
+    "fmt"
+
+    r "github.com/raphamorim/go-rainbow"
+)
+
+func main() {
+    fmt.Println(r.Bold(r.Hex("#8E44AD", "raphael")))
+}
+```
+
+![go-main-example](assets/go-main-example.png)
 
 ## Hex
 
