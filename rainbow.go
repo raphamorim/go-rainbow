@@ -9,30 +9,30 @@ import (
 var (
 	reset = "\u001b[0m"
 
-	colorBlack = "\x1b[30m"
-	colorBlue = "\x1b[34m"
-	colorRed = "\x1b[31m"
-	colorGreen = "\x1b[32m"
-	colorYellow = "\x1b[33m"
+	colorBlack   = "\x1b[30m"
+	colorBlue    = "\x1b[34m"
+	colorRed     = "\x1b[31m"
+	colorGreen   = "\x1b[32m"
+	colorYellow  = "\x1b[33m"
 	colorMagenta = "\x1b[35m"
-	colorCyan = "\x1b[36m"
-	colorWhite ="\x1b[37m"
+	colorCyan    = "\x1b[36m"
+	colorWhite   = "\x1b[37m"
 
-	bgBlack = "\x1b[40m"
-	bgBlue = "\x1b[44m"
-	bgRed = "\x1b[41m"
-	bgGreen = "\x1b[42m"
-	bgYellow = "\x1b[43m"
+	bgBlack   = "\x1b[40m"
+	bgBlue    = "\x1b[44m"
+	bgRed     = "\x1b[41m"
+	bgGreen   = "\x1b[42m"
+	bgYellow  = "\x1b[43m"
 	bgMagenta = "\x1b[45m"
-	bgCyan = "\x1b[46m"
-	bgWhite = "\x1b[47m"
+	bgCyan    = "\x1b[46m"
+	bgWhite   = "\x1b[47m"
 
-	modifierBold = "\x1b[1m"
-	modifierDim = "\x1b[2m"
+	modifierBold       = "\x1b[1m"
+	modifierDim        = "\x1b[2m"
 	modifierUnderscore = "\x1b[4m"
-	modifierBlink = "\x1b[5m"
-	modifierReverse = "\x1b[7m"
-	modifierHidden = "\x1b[8m"
+	modifierBlink      = "\x1b[5m"
+	modifierReverse    = "\x1b[7m"
+	modifierHidden     = "\x1b[8m"
 )
 
 func Black(String string) string {
@@ -129,7 +129,7 @@ func Hex(HexColor, String string) string {
 	if err != nil {
 		return White(String)
 	}
-	
+
 	return "\033[1;38;5;" + strconv.Itoa(int(code)) + "m" + String
 }
 
