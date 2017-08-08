@@ -81,7 +81,7 @@ ftm.Printf("%s", rainbow.Hex("#000080", "String from HEX")) // should be index 4
 32-bit unsigned integer equivalent (`uint32`)
 
 ```go
-fmt.Printf("%s", FromInt32(0xCC66FFFF, "String from Int32"))
+fmt.Printf("%s", rainbow.FromInt32(0xCC66FFFF, "String from Int32"))
 ```
 
 ## Modifiers
