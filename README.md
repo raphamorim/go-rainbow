@@ -11,17 +11,17 @@ Extremely inspired by [chalk.js](https://github.com/chalk/chalk)
 
 ![Sample](assets/sample.png)
 
-```go
-Printf("%s %s %s %s %s %s %s %s", Blue("blue"), Black("black"), Red("red"), Green("green"), Yellow("yellow"), Magenta("magenta"), Cyan("cyan"), White("white"))
-Printf("\n%s %s %s %s %s %s %s %s", BgBlue("bgBlue"), BgBlack("BgBlack"), BgRed("bgRed"), BgGreen("bgGreen"), BgYellow("bgYellow"), BgMagenta("bgMagenta"), BgCyan("bgCyan"), BgWhite("bgWhite"))
-Printf("\n%s %s %s %s %s %s", Bold("Bold"), Dim("Dim"), Underscore("Underscore"), Blink("Blink"), Reverse("Reverse"), Hidden("Hidden"))
-Printf("\n%s %s %s", Bold(BgYellow(Blue("Bold+BgYellow+Blue"))), Dim(Underscore("Dim+Underscore")), BgMagenta(Red("BgMagenta+Red")))
-```
-
 ## Install
 
 ```bash
 go get github.com/raphamorim/go-rainbow
+```
+
+## Iterable Samples
+
+```go
+abc := Bold(BgYellow(Blue("Bold+BgYellow+Blue")))
+xyz := Dim(Underscore("Dim+Underscore"))
 ```
 
 ## Modifiers

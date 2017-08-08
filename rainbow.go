@@ -1,4 +1,4 @@
-package main
+package rainbow
 
 import (
 	"fmt"
@@ -121,10 +121,10 @@ func Hidden(String string) string {
 	return modifierHidden + String + reset
 }
 
-func main() {
-	fmt.Printf("%s %s %s %s %s %s %s %s", Blue("blue"), Black("black"), Red("red"), Green("green"), Yellow("yellow"), Magenta("magenta"), Cyan("cyan"), White("white"))
-	fmt.Printf("\n%s %s %s %s %s %s %s %s", BgBlue("bgBlue"), BgBlack("BgBlack"), BgRed("bgRed"), BgGreen("bgGreen"), BgYellow("bgYellow"), BgMagenta("bgMagenta"), BgCyan("bgCyan"), BgWhite("bgWhite"))
-	fmt.Printf("\n%s %s %s %s %s %s", Bold("Bold"), Dim("Dim"), Underscore("Underscore"), Blink("Blink"), Reverse("Reverse"), Hidden("Hidden"))
-	fmt.Printf("\n%s %s %s", Bold(BgYellow(Blue("Bold+BgYellow+Blue"))), Dim(Underscore("Dim+Underscore")), BgMagenta(Red("BgMagenta+Red")))
-}
+// func main() {
+// 	fmt.Printf("%s %s %s %s %s %s %s %s", Blue("blue"), Black("black"), Red("red"), Green("green"), Yellow("yellow"), Magenta("magenta"), Cyan("cyan"), White("white"))
+// 	fmt.Printf("\n%s %s %s %s %s %s %s %s", BgBlue("bgBlue"), BgBlack("BgBlack"), BgRed("bgRed"), BgGreen("bgGreen"), BgYellow("bgYellow"), BgMagenta("bgMagenta"), BgCyan("bgCyan"), BgWhite("bgWhite"))
+// 	fmt.Printf("\n%s %s %s %s %s %s", Bold("Bold"), Dim("Dim"), Underscore("Underscore"), Blink("Blink"), Reverse("Reverse"), Hidden("Hidden"))
+// 	fmt.Printf("\n%s %s %s", Bold(BgYellow(Blue("Bold+BgYellow+Blue"))), Dim(Underscore("Dim+Underscore")), BgMagenta(Red("BgMagenta+Red")))
+// }
 
