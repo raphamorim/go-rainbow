@@ -1,7 +1,6 @@
 package rainbow
 
 import (
-	"fmt"
 	"strconv"
 
 	"github.com/tomnomnom/xtermcolor"
