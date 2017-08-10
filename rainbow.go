@@ -1,7 +1,9 @@
 package rainbow
 
 import (
+	"fmt"
 	"strconv"
+	"time"
 
 	"github.com/tomnomnom/xtermcolor"
 )
@@ -136,4 +138,28 @@ func Hex(hexColor, text string) string {
 func FromInt32(Int uint32, text string) string {
 	code := xtermcolor.FromInt(Int)
 	return "\033[1;38;5;" + strconv.Itoa(int(code)) + "m" + text
+}
+
+func Animation(text string, animation string) {
+	if animation == "neon" {
+		go neonAnimation(text)
+	}
+
+	select {}
+}
+
+func neonAnimation(text string) {
+	fmt.Println("\033[E")
+	each := 0
+	for _ = range time.Tick(time.Second / 2) {
+		if each > 2 {
+			fmt.Println("\033[A\033[K" + Bold(Magenta(text)))
+			if each > 3 {
+				each = 0
+			}
+		} else {
+			fmt.Println("\033[A\033[K" + Bold(Dim(text)))
+		}
+		each += 1
+	}
 }

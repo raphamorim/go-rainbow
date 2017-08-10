@@ -2,7 +2,7 @@
 
 Extremely inspired by [chalk.js](https://github.com/chalk/chalk)
 
-`go-rainbow` allows you to: 
+`go-rainbow` allows you to:
 
 - Iterate modifiers and colors on a String.
 - Use HEX as you wish.
@@ -11,6 +11,16 @@ Extremely inspired by [chalk.js](https://github.com/chalk/chalk)
 - Bring magical Rainbow on a String (work in progress).
 
 ![Sample](assets/sample.png)
+
+## Available animations
+
+|   Name    |                   Preview                  |
+|:---------:|:------------------------------------------:|
+|  rainbow  | on going... |
+|   pulse   | on going... |
+|   glitch  | on going... |
+|   radar   | on going... |
+|    neon   | ![rainbow](http://i.imgur.com/ZXMBJoB.gif) |
 
 # Summary
 
@@ -44,6 +54,7 @@ Extremely inspired by [chalk.js](https://github.com/chalk/chalk)
   - `BgMagenta`
   - `BgCyan`
   - `BgWhite`
+- [Animations](#animations)
 
 ## Install
 
@@ -164,6 +175,22 @@ rainbow.BgBlue("String in Blue Background")
 abc := Bold(BgYellow(Blue("Bold+BgYellow+Blue")))
 xyz := Dim(Underscore("Dim+Underscore"))
 ```
+
+## Animations
+
+Animations have a different behavior of all methods, they realize the act of print, instead of only returning `string`.
+
+### Neon
+
+**code**
+
+```go
+rainbow.Animation("AWESOME NEON ANIMATION", "neon")
+```
+
+**sample**
+
+![rainbow](http://i.imgur.com/ZXMBJoB.gif)
 
 ## RGB (working on it)
 
