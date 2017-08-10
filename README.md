@@ -20,7 +20,7 @@ Extremely inspired by [chalk.js](https://github.com/chalk/chalk)
 |   pulse   | on going... |
 |   glitch  | on going... |
 |   radar   | on going... |
-|    neon   | ![rainbow](http://i.imgur.com/ZXMBJoB.gif) |
+|    neon   | ![rainbow](http://i.imgur.com/Hl98alo.gif) |
 
 # Summary
 
