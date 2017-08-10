@@ -1,8 +1,6 @@
 package main
 
 import (
-    "fmt"
-
     "github.com/raphamorim/go-rainbow"
 )
 
