@@ -20,6 +20,15 @@ var (
 	colorCyan    = "\x1b[36m"
 	colorWhite   = "\x1b[37m"
 
+	colorGray          = "\x1b[90m"
+	colorBlueBright    = "\x1b[94m"
+	colorRedBright     = "\x1b[91m"
+	colorGreenBright   = "\x1b[92m"
+	colorYellowBright  = "\x1b[93m"
+	colorMagentaBright = "\x1b[95m"
+	colorCyanBright    = "\x1b[96m"
+	colorWhiteBright   = "\x1b[97m"
+
 	bgBlack   = "\x1b[40m"
 	bgBlue    = "\x1b[44m"
 	bgRed     = "\x1b[41m"
@@ -28,6 +37,15 @@ var (
 	bgMagenta = "\x1b[45m"
 	bgCyan    = "\x1b[46m"
 	bgWhite   = "\x1b[47m"
+
+	bgBlackBright   = "\x1b[100m"
+	bgBlueBright    = "\x1b[104m"
+	bgRedBright     = "\x1b[101m"
+	bgGreenBright   = "\x1b[102m"
+	bgYellowBright  = "\x1b[103m"
+	bgMagentaBright = "\x1b[105m"
+	bgCyanBright    = "\x1b[106m"
+	bgWhiteBright   = "\x1b[107m"
 
 	modifierBold       = "\x1b[1m"
 	modifierDim        = "\x1b[2m"
@@ -69,6 +87,38 @@ func White(text string) string {
 	return colorWhite + text + reset
 }
 
+func Gray(text string) string {
+	return colorGray + text + reset
+}
+
+func BlueBright(text string) string {
+	return colorBlueBright + text + reset
+}
+
+func RedBright(text string) string {
+	return colorRedBright + text + reset
+}
+
+func GreenBright(text string) string {
+	return colorGreenBright + text + reset
+}
+
+func YellowBright(text string) string {
+	return colorYellowBright + text + reset
+}
+
+func MagentaBright(text string) string {
+	return colorMagentaBright + text + reset
+}
+
+func CyanBright(text string) string {
+	return colorCyanBright + text + reset
+}
+
+func WhiteBright(text string) string {
+	return colorWhiteBright + text + reset
+}
+
 func BgBlack(text string) string {
 	return bgBlack + text + reset
 }
@@ -99,6 +149,38 @@ func BgCyan(text string) string {
 
 func BgWhite(text string) string {
 	return bgWhite + text + reset
+}
+
+func BgBlackBright(text string) string {
+	return bgBlackBright + text + reset
+}
+
+func BgBlueBright(text string) string {
+	return bgBlueBright + text + reset
+}
+
+func BgRedBright(text string) string {
+	return bgRedBright + text + reset
+}
+
+func BgGreenBright(text string) string {
+	return bgGreenBright + text + reset
+}
+
+func BgYellowBright(text string) string {
+	return bgYellowBright + text + reset
+}
+
+func BgMagentaBright(text string) string {
+	return bgMagentaBright + text + reset
+}
+
+func BgCyanBright(text string) string {
+	return bgCyanBright + text + reset
+}
+
+func BgWhiteBright(text string) string {
+	return bgWhiteBright + text + reset
 }
 
 func Bold(text string) string {
