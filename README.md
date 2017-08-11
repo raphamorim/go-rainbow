@@ -30,31 +30,47 @@ Extremely inspired by [chalk.js](https://github.com/chalk/chalk)
 - [FromInt32](#fromint32)
 - [Iterables](#iterables)
 - [Modifiers](#modifiers)
-  - `Bold`
-  - `Dim`
-  - `Italic`
-  - `Underline`
-  - `Reverse`
-  - `Hidden`
+    - `Bold`
+    - `Dim`
+    - `Italic`
+    - `Underline`
+    - `Reverse`
+    - `Hidden`
 - [Colors](#colors)
-  - `Black`
-  - `Red`
-  - `Green`
-  - `Yellow`
-  - `Blue`
-  - `Magenta`
-  - `Cyan`
-  - `White`
+    - `Black`
+    - `Red`
+    - `Green`
+    - `Yellow`
+    - `Blue`
+    - `Magenta`
+    - `Cyan`
+    - `White`
+    - `RedBright`
+    - `GreenBright`
+    - `YellowBright`
+    - `BlueBright`
+    - `MagentaBright`
+    - `CyanBright`
+    - `WhiteBright`
 - [Background Colors](#background-colors)
-  - `BgBlack`
-  - `BgRed`
-  - `BgGreen`
-  - `BgYellow`
-  - `BgBlue`
-  - `BgMagenta`
-  - `BgCyan`
-  - `BgWhite`
+    - `BgBlack`
+    - `BgRed`
+    - `BgGreen`
+    - `BgYellow`
+    - `BgBlue`
+    - `BgMagenta`
+    - `BgCyan`
+    - `BgWhite`
+    - `BgBlackBright`
+    - `BgRedBright`
+    - `BgGreenBright`
+    - `BgYellowBright`
+    - `BgBlueBright`
+    - `BgMagentaBright`
+    - `BgCyanBright`
+    - `BgWhiteBright`
 - [Animations](#animations)
+    - `Neon`
 
 ## Install
 
