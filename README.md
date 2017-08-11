@@ -129,10 +129,6 @@ rainbow.Blue("String in Blue")
 - `Magenta`
 - `Cyan`
 - `White`
-
-#### Soon (send a PR to help us!):
-
-- `Gray`
 - `RedBright`
 - `GreenBright`
 - `YellowBright`
@@ -140,6 +136,10 @@ rainbow.Blue("String in Blue")
 - `MagentaBright`
 - `CyanBright`
 - `WhiteBright`
+
+#### Soon (send a PR to help us!):
+
+- `Gray`
 
 ## Background Colors
 
@@ -157,9 +157,6 @@ rainbow.BgBlue("String in Blue Background")
 - `BgMagenta`
 - `BgCyan`
 - `BgWhite`
-
-#### Soon (send a PR to help us!):
-
 - `BgBlackBright`
 - `BgRedBright`
 - `BgGreenBright`
