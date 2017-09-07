@@ -232,16 +232,13 @@ func Animation(text string, animation string) {
 
 func neonAnimation(text string) {
 	fmt.Println("\033[E")
-	each := 0
-	for _ = range time.Tick(time.Second / 2) {
-		if each > 2 {
+	light := false
+	for range time.Tick(time.Second) {
+		if light {
 			fmt.Println("\033[A\033[K" + Bold(Magenta(text)))
-			if each > 3 {
-				each = 0
-			}
 		} else {
 			fmt.Println("\033[A\033[K" + Bold(Dim(text)))
 		}
-		each += 1
+		light = !light
 	}
 }
